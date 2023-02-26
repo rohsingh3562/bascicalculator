@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <title>-<><><>-Come and Calculate</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1 id="heading" class="head">Let's Calculate</h1>
+        
+            <input type="text" name="inpo" id="inpo">
+            <div class="btn-containers">
+                <input type="button" value="AC" onclick="inpo.value=''">
+                <input type="button" value="Del" onclick="inpo.value= inpo.value.toString().slice(0,-1)">
+                <input type="button" value="." onclick="inpo.value+='.'">
+                <input type="button" value="/" onclick="inpo.value+='/'">
+            </div>
+            <div class="btn-containers">
+                <input type="button" value="1" onclick="inpo.value+='1'">
+                <input type="button" value="2" onclick="inpo.value+='2'">
+                <input type="button" value="3" onclick="inpo.value+='3'">
+                <input type="button" value="+" onclick="inpo.value+='+'">
+            </div>
+            <div class="btn-containers">
+                <input type="button" value="4" onclick="inpo.value+='4'">
+                <input type="button" value="5" onclick="inpo.value+='5'">
+                <input type="button" value="6" onclick="inpo.value+='6'">
+                <input type="button" value="-" onclick="inpo.value+='-'">
+            </div>
+            <div class="btn-containers">
+                <input type="button" value="7" onclick="inpo.value+='7'">
+                <input type="button" value="8" onclick="inpo.value+='8'">
+                <input type="button" value="9" onclick="inpo.value+='9'">
+                <input type="button" value="*" onclick="inpo.value+='*'">
+            </div class="btn-containers">
+
+            <div class="btn-containers">
+            <input type="button" value="0" onclick="inpo.value+='0'">
+            <input type="button" value="00" onclick="inpo.value+='00'">
+            <input type="button" value="=" onclick="inpo.value= eval(inpo.value)" >
+            </div>
+            
+        
+    </div>
+</body>
+
+</html>

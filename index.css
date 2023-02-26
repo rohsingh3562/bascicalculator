@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(red,blue);
+    font-family: monospace;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 20% 30% 20%; 
+    align-items: center;
+    border: 2px solid black;
+}
+@media (max-width: 635px) {
+    .main {
+        display: inline-block;
+    }
+}
+
+input[type="button"] {
+    color: aqua;
+    background-image: linear-gradient(white,red,blue);
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    cursor: pointer;
+}
+ 
+input[type="text"] {
+    width: 310px;
+    height: 50px;
+    font-size: larger;
+    font-family: fantasy;
+    cursor: pointer;
+    
+}
+ 
+input[value="="] {
+    width: 140px;
+}
